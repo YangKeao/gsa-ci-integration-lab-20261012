@@ -7,5 +7,5 @@ temporary private fork 的集成能力。
 仓库中的漏洞、修复和 advisory 全部是合成测试数据，不对应真实安全问题，
 不得申请 CVE，也不会发布成真实安全公告。
 
-实验报告与截图会保存在 [`docs/`](docs/) 目录。
-
+实验报告与截图会保存在 [`docs/`](docs/) 目录。仓库还包含一个中文自定义
+private vulnerability reporting 表单，用于验证必填字段和 API 行为。
