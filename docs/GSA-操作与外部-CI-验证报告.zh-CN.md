@@ -53,7 +53,7 @@ Advisory Database，本实验**没有申请 CVE、没有发布 advisory、没有
 | 私密 PR #1 | open，`fix/synthetic-normalization → main` | [登录后打开](https://github.com/YangKeao/gsa-ci-integration-lab-20261012-ghsa-xr65-8ffv-3qw4/pull/1) |
 | 私密 PR #2 | open，`docs/independent-main-pr → main` | [登录后打开](https://github.com/YangKeao/gsa-ci-integration-lab-20261012-ghsa-xr65-8ffv-3qw4/pull/2) |
 | 额外私密分支 | 已 push；以非 `main` 分支为 base 建 PR 返回 422 | `test/synthetic-regression` |
-| 公开 Actions | 两次 push 均成功 | [初始 run](https://github.com/YangKeao/gsa-ci-integration-lab-20261012/actions/runs/38228975018)、[自定义表单 run](https://github.com/YangKeao/gsa-ci-integration-lab-20261012/actions/runs/38229109274) |
+| 公开 Actions | 已记录的 push run 均成功 | [初始 run](https://github.com/YangKeao/gsa-ci-integration-lab-20261012/actions/runs/38228975018)、[自定义表单 run](https://github.com/YangKeao/gsa-ci-integration-lab-20261012/actions/runs/38229109274)、[报告提交 run](https://github.com/YangKeao/gsa-ci-integration-lab-20261012/actions/runs/38229877850) |
 
 private fork、draft advisory 和私密 PR 对无权限用户表现为 404；这正是预期的保密边界。
 
@@ -294,7 +294,7 @@ advisory-level merge，避免任何合成修复进入公开仓库。
 
 ### 9.1 公开仓库基线
 
-公开仓库包含 `.github/workflows/test.yml`，两次 push 均运行成功：
+公开仓库包含 `.github/workflows/test.yml`，报告中记录的 push run 均运行成功：
 
 ![公开仓库 Actions 成功](screenshots/02-public-actions-run.png)
 
@@ -449,4 +449,3 @@ gh repo delete YangKeao/gsa-workflow-sandbox-20261012 --yes
 ```
 
 本次完整实验仓库及其安全痕迹应继续保留。
-
